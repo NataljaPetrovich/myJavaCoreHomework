@@ -9,5 +9,4 @@ public class Main {
         mcdonald.showFrequences();
         mcdonald.showNumOfUse();
     }
-
 }
