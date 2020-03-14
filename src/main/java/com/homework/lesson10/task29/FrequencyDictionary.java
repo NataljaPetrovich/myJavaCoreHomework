@@ -72,7 +72,8 @@ public class FrequencyDictionary {
      */
     public void showFrequency() {
         for (Map.Entry<String, Integer> entry : frequDict.entrySet()) {
-            System.out.println("Word's \"" + entry.getKey() + "\" frequency is " + ((double) entry.getValue() / this.words.size() * 100) + " per 100.");
+            System.out.println("Word's \"" + entry.getKey() + "\" frequency is " +
+                    ((double) entry.getValue() / this.words.size() * 100) + " per 100.");
         }
     }
 
