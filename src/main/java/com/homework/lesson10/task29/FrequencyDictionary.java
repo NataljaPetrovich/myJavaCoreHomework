@@ -26,9 +26,13 @@ public class FrequencyDictionary {
         this.frequDict = this.toFrequDict();
     }
 
-
+    /**
+     * String text to words ArrayList.
+     *
+     * @return the map
+     */
     private ArrayList toArrayList(String s) {
-        ArrayList text = new ArrayList();
+        ArrayList words = new ArrayList();
         char[] array = s.toCharArray();
         for (int i = 0; i < array.length; i++) {
             if (!(Character.isLetterOrDigit(array[i]))) {
@@ -40,15 +44,15 @@ public class FrequencyDictionary {
         for (int i = 0; i < word.length; i++) {
             word[i].trim();
             if (word[i].length() > 0) {
-                text.add(word[i]);
+                words.add(word[i]);
             }
         }
-        return text;
+        return words;
     }
 
 
     /**
-     * To frequ dict map.
+     * Words ArrayList to frequency dictionary Map.
      *
      * @return the map
      */
@@ -64,15 +68,18 @@ public class FrequencyDictionary {
 
 
     /**
-     * Show frequences.
+     * Show frequency.
      */
-    public void showFrequences() {
+    public void showFrequency() {
         for (Map.Entry<String, Integer> entry : frequDict.entrySet()) {
-            System.out.println("Word's \"" + entry.getKey() + "\" frequency is " + ((double)entry.getValue()/this.words.size()*100) + " per 100.");
+            System.out.println("Word's \"" + entry.getKey() + "\" frequency is " + ((double) entry.getValue() / this.words.size() * 100) + " per 100.");
         }
     }
 
-    public void showNumOfUse(){
+    /**
+     * Show number of uses of the words.
+     */
+    public void showNumOfUse() {
         for (Map.Entry<String, Integer> entry : frequDict.entrySet()) {
             System.out.println("Word \"" + entry.getKey() + "\" is used " + entry.getValue() + " times.");
         }
