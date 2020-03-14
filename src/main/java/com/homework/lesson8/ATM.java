@@ -1,6 +1,4 @@
-package main.java.com.homework.lesson27febr2020;
-
-import java.io.Serializable;
+package main.java.com.homework.lesson8;
 
 /**
  * The type ATM.

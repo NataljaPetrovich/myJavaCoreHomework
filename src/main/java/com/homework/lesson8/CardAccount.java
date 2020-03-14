@@ -1,4 +1,4 @@
-package main.java.com.homework.lesson27febr2020;
+package main.java.com.homework.lesson8;
 
 import java.io.Serializable;
 import java.util.Calendar;
