@@ -1,7 +1,7 @@
 package main.java.com.homework.lesson11;
 /*
  * Task #28:
- * Create a list of pupils' marks (ArrayList), fill in randomly. Find highest one with the help of iterator.
+ * Create a list of pupils' marks (ArrayList), fill in randomly. Find highest one using iterator.
  * */
 
 public class Task28 {
