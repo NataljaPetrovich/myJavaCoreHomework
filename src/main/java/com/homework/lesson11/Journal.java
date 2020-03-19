@@ -38,9 +38,9 @@ public class Journal {
      */
     public Integer getMaxMark() {
         Integer maxMark = 0;
-        Iterator iterator = classJournal.iterator();
+        Iterator <Integer> iterator = classJournal.iterator();
         while (iterator.hasNext()) {
-            Integer i = (Integer) (iterator.next());
+            Integer i = iterator.next();
             if (i > maxMark) {
                 maxMark = i;
             }
