@@ -36,17 +36,18 @@ public class Journal {
      *
      * @return the integer
      */
-    public Integer getMaxMark (){
-        Integer maxMark=0;
+    public Integer getMaxMark() {
+        Integer maxMark = 0;
         Iterator iterator = classJournal.iterator();
-        while (iterator.hasNext()){
-            Integer i = (Integer)(iterator.next());
-          if(i>maxMark){
-              maxMark=i;
-          }
+        while (iterator.hasNext()) {
+            Integer i = (Integer) (iterator.next());
+            if (i > maxMark) {
+                maxMark = i;
+            }
         }
         return maxMark;
-}
+    }
+
     @Override
     public String toString() {
         return "Journal{" +
