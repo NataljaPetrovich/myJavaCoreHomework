@@ -1,7 +1,6 @@
 package main.java.com.homework.lesson12;
 
 import java.io.*;
-import java.util.Random;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
