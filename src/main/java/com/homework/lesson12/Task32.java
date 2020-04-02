@@ -13,10 +13,12 @@ public class Task32 {
     private String fileName;
     private int size;
 
+
     public Task32(String fileName, int size) {
         this.fileName = fileName;
         this.size = size;
     }
+
 
     public boolean createRandomDataFile() {
         DataOutputStream dataOutputStream = null;
@@ -42,9 +44,11 @@ public class Task32 {
         return result;
     }
 
+
     private int[] createRandomNumbers() {
         return IntStream.generate(() -> (int) (Math.random() * 10 + 1)).limit(size).toArray();
     }
+
 
     public void printData() {
         for (int i : getData()) {
@@ -52,9 +56,11 @@ public class Task32 {
         }
     }
 
+
     public Integer getAverage() {
         return Arrays.stream(getData()).reduce(0, (a, b) -> (a + b) / 2);
     }
+
 
     private int[] getData() {
         int[] data = new int[size];
