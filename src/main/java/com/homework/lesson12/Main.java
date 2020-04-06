@@ -1,5 +1,6 @@
 package main.java.com.homework.lesson12;
 
+
 public class Main {
     public static void main(String[] args) {
 
@@ -27,5 +28,3 @@ public class Main {
             testData.printData();
             System.out.println("Average: " + testData.getAverage());
         }
-    }
-}
