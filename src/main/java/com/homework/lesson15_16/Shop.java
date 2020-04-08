@@ -25,6 +25,7 @@ public class Shop {
                 System.out.println(e);
             }
         }
+        cashRegisters.shutdown();
     }
 }
 
