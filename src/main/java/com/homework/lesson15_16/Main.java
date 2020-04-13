@@ -13,5 +13,11 @@ public class Main {
             c.putGoodsInBasket(euroSpar.goodsInShop);
         }
         euroSpar.serveAllCustomers(customers);
+        System.out.println("Test: ");
+        int i = 1;
+        for (Customer c : customers) {
+            System.out.print("Customer " + i++ + ":");
+            c.showGoodsInBasket();
+        }
     }
 }

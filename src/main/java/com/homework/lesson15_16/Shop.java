@@ -20,7 +20,7 @@ public class Shop {
         for (Customer c : customers) {
             cashRegisters.execute(c);
             try {
-                cashRegisters.awaitTermination(1000, TimeUnit.MILLISECONDS);
+                cashRegisters.awaitTermination(500, TimeUnit.MILLISECONDS);
             } catch (InterruptedException e) {
                 System.out.println(e);
             }
