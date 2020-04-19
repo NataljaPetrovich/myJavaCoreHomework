@@ -28,3 +28,5 @@ public class Main {
             testData.printData();
             System.out.println("Average: " + testData.getAverage());
         }
+    }
+}
