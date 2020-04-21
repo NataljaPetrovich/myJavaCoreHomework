@@ -32,11 +32,16 @@ public class Customer implements Runnable {
     @Override
     public void run() {
         synchronized (goodsToBuy) {
-            System.out.println("Cuctomer " + number);
+            System.out.println("Покупатель №" + number);
             for (String s : goodsToBuy) {
                 System.out.print(s + "; ");
             }
-            System.out.println( "Всего товаров: " + goodsToBuy.size());
+            System.out.println("Всего товаров: " + goodsToBuy.size());
+            /*try {
+                Thread.sleep(1500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }*/
         }
     }
 }

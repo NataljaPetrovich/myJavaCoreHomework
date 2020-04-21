@@ -13,11 +13,19 @@ public class Main {
             c.putGoodsInBasket(euroSpar.goodsInShop);
         }
         euroSpar.serveAllCustomers(customers);
+
+
+        //Проверка корректности вывода списков покупок
+        /*try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println("Test: ");
         int i = 1;
         for (Customer c : customers) {
-            System.out.print("Customer " + i++ + ":");
+            System.out.print("Покупатель №" + i++ + ":");
             c.showGoodsInBasket();
-        }
+        }*/
     }
 }
