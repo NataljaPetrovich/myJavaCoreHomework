@@ -6,20 +6,24 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.Collectors;
 
+
 public class Customer extends Thread {
     ArrayList<String> goodsToBuy;
     ArrayList<String> check;
+
 
     Customer(int number) {
         this.setName("Покупатель №" + number);
         goodsToBuy = new ArrayList<>();
     }
 
+
     @Override
     public void run() {
         putGoodsInBasket();
         scanGoods();
     }
+
 
     void putGoodsInBasket() {
         Random random = new Random();
@@ -32,7 +36,8 @@ public class Customer extends Thread {
         }
     }
 
-    synchronized void scanGoods() {
+
+    void scanGoods() {
         check = new ArrayList<>();
         int totalCost = 0;
         for (String s : goodsToBuy) {

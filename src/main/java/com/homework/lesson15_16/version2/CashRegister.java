@@ -14,15 +14,15 @@ public class CashRegister extends Thread {
         System.out.println(this.getName() + ": за рабочий день обслужено покупателей: " + numberOfServedCustomers);
     }
 
-    synchronized void serveNextCustomer(int numberOfServedCustomer){
-        Customer c = new Customer(numberOfServedCustomer);
 
+    void serveNextCustomer(int numberOfServedCustomer) {
+        Customer c = new Customer(numberOfServedCustomer);
         c.start();
         try {
             c.join();
         } catch (InterruptedException e) {
             System.out.println("Problem in " + Thread.currentThread().getName());
         }
-        System.out.println(this.getName() + ": " +c.getName() + c.check);
+        System.out.println(this.getName() + ": " + c.getName() + c.check);
     }
 }
